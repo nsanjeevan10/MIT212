@@ -1,7 +1,7 @@
 # clinic.py — Patient Management System v1.0
 patients = []
-def add_patient(name, age):
- patient = {"name": name, "age": age}
+def add_patient(name, age, condition=None, doctor=None):
+ patient = {"name": name, "age": age, "condition": condition, "doctor": doctor}
  patients.append(patient)
  print("Patient added.")
 def view_patients():
